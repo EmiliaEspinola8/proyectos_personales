@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto;
+    background: #d2b4de;
+    color: #626567;
+}
+
+body, div, ul, li, aside, form, span,p{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    position: fixed;
+    width: clamp(220px, 20% , 250px);
+    position: relative;
+}
+
+.wapper-sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 15px 15px;
+    background: #ecf0f1;
+    z-index: 10;
+}
+
+.seccion{
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion-sidebar{
+    border-bottom: #d6dbdf solid 2px;
+    padding-bottom:  15px;
+}
+
+.seccion-titulo{
+    margin-bottom: 10px;
+}
+
+.imagen{
+    width: 60px;
+    height: 60px;
+}
+
+.datos-user{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.waper-datos{
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name{
+    color: #000;
+    font-weight: 800;
+}
+
+.notificacion{
+    font-weight: 200;
+    font-size: 0.8em;
+}
+
+li{
+    display: flex;
+    justify-items: center;
+    gap: 10px;
+    padding: 10px 0 10px 8px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.sec-product{
+    background: #fff;
+    border: #d6dbdf77 solid 1px;
+    border-radius: 7px;
+    color: #239b56;
+}
+
+li:hover{
+    background: #d6dbdf99;
+    color: black;
+    border-radius: 7px;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.sidebar-form{
+    position: absolute;
+    z-index: 20;
+    right: -1.5rem;
+    top: 0.3rem
+}
+
+label{
+    background: #fff;
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: .5rem;
+    border: #d6dbdf77 solid 1px;
+}
+
+.sidebar:has(input[type="checkbox"]:checked){
+    width: fit-content;
+}
+
+.sidebar:has(input[type="checkbox"]:checked) :is(.wapper-sidebar a , .waper-datos, .seccion p) {
+    display: none;
+}
+
+.sidebar:has(input[type="checkbox"]:checked) .wapper-sidebar img{
+    width: 40px;
+    height: 40px;
+}
+
+.sidebar-form .open-button{
+    display: none;
+}
+
+.sidebar:has(input[type="checkbox"]:checked) .sidebar-form label{
+    display: none;
+}
+
+.sidebar:has(input[type="checkbox"]:checked) .sidebar-form .open-button{
+    display: block;
+}

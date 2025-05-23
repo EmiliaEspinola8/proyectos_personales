@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_sidebar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>SideBar</title>
+</head>
+<body>
+    <aside class="sidebar">
+        <form action="" class="sidebar-form" >
+            <input type="checkbox" id="close">
+            <label for="close" class="material-symbols-outlined">close</label>
+            <label for="close" class="material-symbols-outlined open-button">open_in_full</label>
+        </form>
+        
+        <nav class="wapper-sidebar">
+            <div class="datos-user seccion-sidebar">
+                <img class="imagen" src="img/user.png.png" alt="">
+                    <div class="waper-datos">
+                        <p class="user-name">Emilia Espinola</p>
+                        <p class="notificacion">Session ends in 9 min 5 s</p>
+                    </div>
+            </div>
+            <div class="seccion-sidebar seccion">
+                <p class="seccion-titulo">Banking</p>
+                <lu>
+                    <li>
+                        <span class="material-symbols-outlined">
+                            dashboard
+                        </span>
+                        <a href="#">Dashboard</a>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">
+                            history
+                        </span>
+                        <a href="#">History</a>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">
+                            leaderboard
+                        </span>
+                        <a href="#">Analysis</a>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">
+                            finance
+                        </span>
+                        <a href="#">Finances</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="seccion-sidebar seccion">
+                <p class="seccion-titulo">Services</p>
+                <ul>
+                    <li>
+                        <span class="material-symbols-outlined">
+                            mail
+                        </span>
+                        <a href="#">Messages</a>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">
+                            folder
+                        </span>
+                        <a href="#">Documents</a>
+                    </li>
+                    <li class="sec-product">
+                        <span class="material-symbols-outlined">
+                            grid_view
+                        </span>
+                        <a href="#">Products</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="seccion">
+                <p class="seccion-titulo">Other</p>
+                <ul>
+                    <li>
+                        <span class="material-symbols-outlined">
+                            token
+                            </span>
+                        <a href="#">Help</a>
+                    </li>
+                    <li>
+                        <span class="material-symbols-outlined">
+                            settings
+                        </span>
+                        <a href="#">Settigs</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </aside>
+</body>
+</html>

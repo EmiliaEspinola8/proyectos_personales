@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body>
+    <section>
+
+        <div class="modal-wapper hidden">
+        </div>
+
+        <div class="wapper-form hidden">
+            <h2>Agregar Producto</h2>
+            <form action="">
+                <label for=""> 
+                    Código
+                    <input class="input input-form" t ype="text" placeholder="Ingresa el código del producto">
+                </label>
+                <label for=""> 
+                    Nombre
+                    <input class="input input-form" type="text" placeholder="Ingresa el nombre del producto">
+                </label>
+                <label for=""> 
+                    Categoría
+                    <select class="input input-form">
+                        <option value="Cafetería">Cafetería</option>
+                        <option value="Pastelería">Pastelería</option>
+                        <option value="Jugos">Jugos</option>
+                        <option value="Vegano">Vegano</option>
+                    </select>
+                </label>
+                <label for=""> 
+                    Descripción
+                    <textarea class="input input-form"name="" id="" placeholder="Ingrese la descripción del producto"></textarea>
+                </label>
+                <label for=""> 
+                    Costo
+                    <input class="input input-form" type="number" placeholder="Ingresa el código del producto">
+                </label>
+                <label for=""> 
+                    Precio
+                    <input class="input input-form" type="number" placeholder="Ingresa el código del producto">
+                </label> 
+                <input class="input input-form input-submit" type="submit" value="Guardar Producto ">
+            </form>
+        </div>
+
+        <div class="contenedor-productos">
+        <h1>Productos</h1>
+        <div class="contenedor-flex">
+        <div><button class="button button-importar"> <span class="material-symbols-outlined">upload</span> Importar Productos</button></div>
+        <div><button  id="abrirModal" class="button button-add"> <span class="material-symbols-outlined">add</span> Agregar Producto</button></div>
+        </div>
+        <div class="wapper-filtros">
+            <div class="wapper-buscar input">
+                <span class="material-symbols-outlined icono-buscar">search</span>
+                <input class="input-buscar" type="text" placeholder="Buscar por nombre">
+            </div>
+            <div class="wapper-select">
+                <select class="input input-filtro" name="" id="">
+                    <option value="">Categoría</option>
+                    <option value="Cafetería">Cafetería</option>
+                    <option value="Pastelería">Pastelería</option>
+                    <option value="Jugos">Jugos</option>
+                    <option value="Vegano">Vegano</option>
+                </select>
+                <select class="input input-filtro" name="" id="">
+                    <option value="">Estado</option>
+                    <option value="Cafetería">Activo</option>
+                    <option value="Pastelería">inactivo</option>
+                </select>
+            </div>
+        </div>
+        </div>
+    <table>
+        <thead>
+            <tr>
+                <th class="filas">Cód.</th>
+                <th class="filas">Producto</th>
+                <th class="filas">Categoría</th>
+                <th class="filas">Costo</th>
+                <th class="filas">Margen $</th>
+                <th class="filas">Margen %</th>
+                <th class="filas">Precio</th>
+                <th class="filas">estado</th>
+                <th class="filas">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="filas">1</td>
+                <td class="filas">Café</td>
+                <td class="filas">Cafetería</td>
+                <td class="filas">$ 4000</td>
+                <td class="filas">$ 2000</td>
+                <td class="filas">100%</td>
+                <td class="filas">$ 2000</td>
+                <td class="filas"> <div class="activo"> activo </div></td>
+                <td class="filas"> 
+                    <div>
+                        <span class="material-symbols-outlined icon">edit</span>
+                        <span class="material-symbols-outlined icon">delete</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="filas">1</td>
+                <td class="filas">Café</td>
+                <td class="filas">Cafetería</td>
+                <td class="filas">$ 4000</td>
+                <td class="filas">$ 2000</td>
+                <td class="filas">100%</td>
+                <td class="filas">$ 2000</td>
+                <td class="filas"> <div class="activo"> activo </div></td>
+                <td class="filas">
+                    <div>
+                        <span class="material-symbols-outlined icon">edit</span>
+                        <span class="material-symbols-outlined icon">delete</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="filas">1</td>
+                <td class="filas">Café</td>
+                <td class="filas">Cafetería</td>
+                <td class="filas">$ 4000</td>
+                <td class="filas">$ 2000</td>
+                <td class="filas">100%</td>
+                <td class="filas">$ 2000</td>
+                <td class="filas"> <div class="activo inactivo"> inactivo </div></td>
+                <td class="filas">
+                    <div>
+                        <span class="material-symbols-outlined icon">edit</span>
+                        <span class="material-symbols-outlined icon">delete</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="filas">1</td>
+                <td class="filas">Café</td>
+                <td class="filas">Cafetería</td>
+                <td class="filas">$ 4000</td>
+                <td class="filas">$ 2000</td>
+                <td class="filas">100%</td>
+                <td class="filas">$ 2000</td>
+                <td class="filas"> <div class="activo"> activo </div></td>
+                <td class="filas">
+                    <div>
+                        <span class="material-symbols-outlined icon">edit</span>
+                        <span class="material-symbols-outlined icon">delete</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="filas">1</td>
+                <td class="filas">Café</td>
+                <td class="filas">Cafetería</td>
+                <td class="filas">$ 4000</td>
+                <td class="filas">$ 2000</td>
+                <td class="filas">100%</td>
+                <td class="filas">$ 2000</td>
+                <td class="filas"> <div class="activo"> activo </div></td>
+                <td class="filas">
+                    <div>
+                        <span class="material-symbols-outlined icon">edit</span>
+                        <span class="material-symbols-outlined icon">delete</span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="filas">1</td>
+                <td class="filas">Café</td>
+                <td class="filas">Cafetería</td>
+                <td class="filas">$ 4000</td>
+                <td class="filas">$ 2000</td>
+                <td class="filas">100%</td>
+                <td class="filas">$ 2000</td>
+                <td class="filas"> <div class=" activo inactivo"> inactivo </div></td>
+                <td class="filas">
+                    <div>
+                        <span class="material-symbols-outlined icon">edit</span>
+                        <span class="material-symbols-outlined icon">delete</span>
+                    </div>
+                </td>
+            </tr>
+        </tbody> 
+    </table>
+    </section>
+    <script src="codigo.js"></script>
+</body>
+</html>

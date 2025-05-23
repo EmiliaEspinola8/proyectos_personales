@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+    <title>Longin tailwind</title>
+</head>
+<body class="bg-[#D5F5E3] text-[#212f3c] font-[Roboto]">
+    <section>
+        <div class="w-[90%] flex shadow-[0_35px_35px_rgba(0,0,0,0.25)] sm:max-w-[800px] mx-auto mt-[110px] rounded-lg">
+
+            <div class="hidden sm:flex sm:w-1/2 flex-col justify-center px-8">
+                <h1 class="text-center text-2xl font-bold mb-8">Bienvenido de nuevo</h1>
+                <p class="text-pretty text-center">Inicia sesión para acceder a tu cuenta y distrutar de todas nuestras funcionalidades.</p>
+            </div>
+
+            <div class="sm:w-1/2">
+
+                <form class="sm:w-[100%] p-10 bg-[#eaf9f1] sm:rounded-none sm:rounded-r-lg rounded-lg" action="">
+
+                    <h2 class="text-center text-2xl mb-4">MASTERY <span class="text-[#239b56]">HUB</span></h2>
+
+                    <label class="text-[#0007] text-[0.9em]">Usuario 
+                        <input class="form__input p-[10px] my-[10px] border border-[#0003] w-full 
+                        rounded-sm hover:ring hover:ring-[#212f3c] bg-white" type="text" placeholder="johnsmith007">
+                    </label>
+
+                    <label class="text-[#0007] text-[0.9em]">Contraseña 
+                        <input class="form__input p-[10px] my-[10px] border border-[#0003] w-full 
+                        rounded-sm hover:ring hover:ring-[#212f3c] bg-white" type="password" placeholder="123456">
+                    </label>
+
+                    <a class="text-[#239b56] hover:underline" href="#">¿olvidaste tu contraseña?</a>
+                    
+                    <input class="p-[10px] mt-[20px] w-full rounded-sm bg-[#212f3c] text-white font-bold 
+                    tracking-widest hover:opacity-[0.9]" type="submit" value="Iniciar">
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_portafolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Portafolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-portafolio">
+                <div class="nav-username">
+                    <i class="bi bi-person-circle"></i>
+                    <p>Emilia Espinola</p>
+                </div>
+                <div class="nav-list">
+                    <ul class="nav-ul">
+                        <li><a href="#">Inicio /</a></li>
+                        <li><a href="#Proyectos">Proyetos /</a></li>
+                        <li><a href="#Articulos">Articulos /</a></li>
+                        <li><a href="#Contac">Contacto </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="seccion-inicial">
+            <h1>Desarrolladora Fontend</h1>
+            <p>Diseño con HTML y CSS</p>
+        </div>
+    </section>
+
+    <main id="Proyectos">
+        <div class="conteiner-grid"> 
+        <div class="grid-item">
+            <div class="recuadros"><h2>Projects</h2></div>
+            <div class="recuadros"><p>HTML Only Portfolio</p></div>
+            <div class="recuadros"><p>Calulator</p></div>
+            <div class="recuadros"><p>Quiz App</p></div>
+            <div class="recuadros"><p>Countdown Timer</p>
+            </div>
+            <div class="recuadros"><p>Product Upcoming Page</p></div>
+        </div>
+        <div  class="grid-item">
+                <div class="recuadros"><h2>Work Experience</h2></div>
+            <div class="recuadros">
+            <p>roadmap.sh</p>
+            <p>Solved all the frontend projects</p>
+            <a class="main-link" href="">Visit my profile</a>  
+            </div>
+            <div class="recuadros">
+                <p>OpenSource Work</p>
+                <p>Contributed to 50 opensource projects. Made my own proyects with 200 GitHub Stars</p>
+                <a class="main-link" href="#">Visit my GitHub Profile</a>
+            </div>
+        </div>
+        <div class="grid-item recuadros">
+                <h2>Education</h2>
+                <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions</p>
+                <p>Couses I took</p>
+                <ul>
+                    <li>-Object Oriented Programming</li>
+                    <li>-Data Structures and Algorithms</li>
+                    <li>-Web Engineering</li>
+                    <li>-Artificial Inteligence</li>
+                    <li>-Human Computer Interaction</li>
+                    <li>-Computer Graphics</li>
+                    <li>-Database Management Systems</li>
+                    <li>-Distributed Database Systems</li>
+                    <li>-Discreet Mathematics</li>
+                </ul>
+        </div>
+        </div>
+    </main>
+    
+    <section id="Articulos">
+        <div class="wapper-cards">
+            <h3 class="cards-titulo">Reviews From my Teachers</h3>
+        <div class="conteiner-cards">
+            <div class="card">
+                <p>Emilia Espinola was a billiant student, always stood out with his assignments.</p>
+                <p class="card-descripcion">Emilia Espinola</p>
+                <p class="card-descripcion">Assistant Professor</p>
+            </div>
+            <div class="card">
+                <p>Emilia Espinola was a billiant student, always stood out with his assignments.</p>
+                <p class="card-descripcion">Emilia Espinola</p>
+                <p class="card-descripcion">Assistant Professor</p>
+            </div>
+            <div class="card">
+                <p>Emilia Espinola was a billiant student, always stood out with his assignments.</p>
+                <p class="card-descripcion">Emilia Espinola</p>
+                <p class="card-descripcion">Assistant Professor</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="Contac" class="form-contact">
+        <div class="conteiner-form">
+            <h3 class="cards-titulo">Conctac</h3>
+            <form class="form-contac" action="">
+                <label class="label-fistName flex" for="">Fist Name 
+                    <input class="form-input"  type="text" placeholder="Jonh" required>
+                </label>
+                <label class="label-lastName flex" >Last Name 
+                    <input class="form-input" type="text" placeholder="Doe" required>
+                </label>
+                <label class="label-email flex" for="">Email 
+                    <input class="form-input" type="text" placeholder="you@company.com" required>
+                </label>
+                <label class="label-number flex" for="">Phone number 
+                    <input class="form-input" type="number" placeholder="3794 997735" required>
+                </label>
+                <label class="label-message flex" for="">Message
+                    <textarea class="form-input textarea" name="" id="" placeholder="Leave me a message..."></textarea>
+                </label>
+                <input class="input-submit flex form-input" type="submit" value="Send message">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div><p>@ all rights reserved 2025</p></div>
+        </div>
+    </footer>
+</body>
+</html>
