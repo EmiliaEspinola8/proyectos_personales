@@ -141,7 +141,7 @@ const limpiarCampos = ()=>{
 const añadirProducto = (p_codigo, p_nombre, p_categoria, p_margenPeso, p_margenPor, p_costo, p_precio) =>{
     const tabla = document.querySelector(".tbody");
     let id = idProducto ++;
-
+/* 
     let producto = {
         codigo: p_codigo,
         nombre: p_nombre,
@@ -154,8 +154,9 @@ const añadirProducto = (p_codigo, p_nombre, p_categoria, p_margenPeso, p_margen
     }
 
     arrayProductos.push(producto);
+    */
 
-    if (arrayProductos.length <= 6) {
+    if (idProducto <= 6) {
         let htmlCode = `<tr class="clase_${id}">
                 <td class="filas">${p_codigo}</td>
                 <td class="filas">${p_nombre}</td>
@@ -182,7 +183,7 @@ const añadirProducto = (p_codigo, p_nombre, p_categoria, p_margenPeso, p_margen
 const validarCampos = (campo, min, max, classError, error)=>{
 
         if(campo.value.length < min || campo.value.length > max){
-            classError.classList.remove('hidden')
+            classError.classList.remove('hidden');
             classError.innerHTML = `El ${error} no es válido`;
             return false;
         }else{

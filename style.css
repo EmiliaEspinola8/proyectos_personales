@@ -75,6 +75,11 @@ h2{
     background-color: inherit;
 }
 
+.icon:hover{
+    color: oklch(54.1% 0.281 293.009);
+    border: oklch(54.1% 0.281 293.009) solid 1px;
+}
+
 .button-add{
     color: #fff;
     background: oklch(54.1% 0.281 293.009);
